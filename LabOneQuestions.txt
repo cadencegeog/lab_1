@@ -1,0 +1,12 @@
+1. These statements are not equivelent. The geometries of both datasets are different- d.stations being point data, while del.counties is polygon. In that sense,
+if we were to put "d.stations" first, our station data would be overlayed over polygons. If we were to use "del.counties" first, we would make the primary layout
+the polygon data, and the station point data would be displayed after the polygons, which would be a problem if we were to do a spatial projection of the intersection.
+If we were wanting to focus on counties and use certain data from d.stations, such as "Drainage_A", using the sf::st_intersection(del.counties, d.stations) might be
+helpful.
+
+2. Starting off this lab was pretty challenging for me, I took AP Computer Science A/B almost 4 years ago, so I am very rusty to Python let alone a whole new language.
+However, once I started to learn R functions, I felt pretty confident in what I was doing. I was definitely overcomplicating things at first. R is more like a giant calculator
+than anything, so getting used to the interface is totally new to me. 
+
+3. I enjoy manipulating data and then putting it on a plot/map, it not only inspires me to think through how the layout will look, but also requires me to think about 
+what I am analyzing and why it is important enough to create an infographic about. 
